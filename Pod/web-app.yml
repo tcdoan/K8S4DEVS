@@ -7,8 +7,8 @@ metadata:
 spec:
   containers:
   - name: webapp
-    image: k8s4devs.azurecr.io/k8s4devs/webapp:v0.2
-    imagePullPolicy: Always
+    image: tcdoan/webapp:v2
+    # imagePullPolicy: Always
     ports:
     - containerPort: 80
     resources:
@@ -18,5 +18,5 @@ spec:
       limits:
         memory: "128Mi"
         cpu: "500m"
-  imagePullSecrets:
-    - name:  k8s4devs
+#  imagePullSecrets:
+#    - name:  tcdoan
